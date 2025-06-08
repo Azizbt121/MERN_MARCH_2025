@@ -1,0 +1,65 @@
+.body {
+  display: flex;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Header {
+  background-color: green;
+  height: 150px;
+  width: 100%;
+  margin: 10px;
+}
+
+.BodyContent {
+  display: inline-flex;
+  flex: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.Navigation {
+  background-color: lightblue;
+  height: 300px;
+  width: 15%;
+  margin-right: 15px;
+  margin: 10px;
+
+}
+
+.MainContent {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  height: 400px;
+  width: 75%;
+  background-color: red;
+  margin: 10px;
+}
+
+.SubContent {
+  display: inline-flex;
+  flex-direction: row;
+  height: 150px;
+  width: 210px;
+  background-color: yellow;
+  margin: 10px auto 0;
+}
+
+.Advertisement {
+  background-color: rgb(162, 30, 199);
+  height: 80px;
+  margin: 10px;
+  width: 90%;  
+}
+
