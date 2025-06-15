@@ -13,8 +13,8 @@ const bookControllers= {
     },
     ReadAll: async (req, res) => {
         try {
-            const AllCakes = await Cake.find()
-            res.json(AllCakes)
+            const AllBooks = await booksBD.find()
+            res.json(AllBooks)
         } catch (err) {
             console.log(err)
             res.status(500).json(err)
@@ -47,7 +47,6 @@ const bookControllers= {
     DeleteBook: async (req, res) => {
         try {
             await booksBD.findByIdAndDelete(req.params.id)
-            res.json("The Cake is Deleted and We think someone eat it ")
         }
         catch (err) {
             console.log(err)
